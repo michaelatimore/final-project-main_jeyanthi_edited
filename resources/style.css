@@ -26,10 +26,11 @@
     /* 99%{    color:transparent;  } */
     /* 100%{   color: #ff0000;    } */
 /* } */
+
 body {
   font-size: 30px;
   font-family: 'Roboto Slab', serif;
-  background-image: url(“/withJS/resources/taskclock.jpg”);
+  background-image: url("taskclock.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

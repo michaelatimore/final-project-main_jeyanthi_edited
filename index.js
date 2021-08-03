@@ -20,40 +20,40 @@ newTaskForm.addEventListener('submit', (event) => {
 
     let taskmanipulations = false;
 
-newTaskForm.addEventListener("submit", (e) => {
-  let messages = [];
-if(taskmanipulations == false)
-{
-  if (newTaskNameInput.value === "" || newTaskNameInput == null) {
-    messages.push("Name is required")
-    isError = true;
-  }
+// newTaskForm.addEventListener("submit", (e) => {
+    let messages = [];
+    if(taskmanipulations == false)
+    {
+      if (newTaskNameInput.value === "" || newTaskNameInput == null) {
+        messages.push("Name is required")
+        isError = true;
+      }
 
-  if (newTaskDescription.value === "" || newTaskDescription.value.length > 20) {
-    messages.push("Description is required and not longer than 20 characters")
-    isError = true;
-  }
+      if (newTaskDescription.value === "" || newTaskDescription.value.length > 20) {
+        messages.push("Description is required and not longer than 20 characters")
+        isError = true;
+      }
 
-  if (newTaskAssignedTo.value === "" && newTaskAssignedTo.value < 3) {
-    messages.push("Enter Assignee for Task")
-    isError = true;
-  }
+      if (newTaskAssignedTo.value === "" && newTaskAssignedTo.value < 3) {
+      messages.push("Enter Assignee for Task")
+      isError = true;
+      }
 
-  if (newTaskDueDate.value === "" || newTaskDueDate.value != number) {
-    messages.push("Enter Due Date")
-    isError = true;
-  }
+      if (newTaskDueDate.value === "" || newTaskDueDate.value != number) {
+        messages.push("Enter Due Date")
+        isError = true;
+      }
   
-  if (messages.length > 0) {
-    e.preventDefault();
-    isError = false;
-    errorElement.innerText = messages.join("; ")
-  }
-  else {
-    isError = true;
-  }
-}
-});
+      if (messages.length > 0) {
+        event.preventDefault();
+        isError = false;
+        errorElement.innerText = messages.join("; ")
+      }
+      else {
+        isError = true;
+      }
+    }
+// });
 
     /*
         Validation code here
