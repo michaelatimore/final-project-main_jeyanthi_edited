@@ -1,28 +1,88 @@
+/* body { */
+  /* font-size: 30px; */
+  /* font-family: 'Roboto Slab', serif; */
+  /* box-sizing: border-box; */
+  /* border: 5px solid #4a0afa; */
+  /* background-color: #b8c1e3; */
+/* } */
+/*  */
+/* h1 { */
+  /* text-align: center; */
+/* } */
+/*  */
+/* #error { */
+  /* padding: 20px 0; */
+  /* font-size: 1rem; */
+  /* font-weight: bold; */
+/* } */
+/*  */
+/* .blinking{ */
+    /* animation:blinkingText 1.2s infinite; */
+/* } */
+/* @keyframes blinkingText{ */
+    /* 0%{     color: #ff0000;    } */
+    /* 49%{    color: #ff0000; } */
+    /* 60%{    color: transparent; } */
+    /* 99%{    color:transparent;  } */
+    /* 100%{   color: #ff0000;    } */
+/* } */
 body {
   font-size: 30px;
   font-family: 'Roboto Slab', serif;
-  box-sizing: border-box;
-  border: 5px solid #4a0afa;
-  background-color: #b8c1e3;
+  background-image: url(“/withJS/resources/taskclock.jpg”);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 50%;
 }
-
-h1 {
+.container {
+  width: 75%;
+  margin: auto;
+}
+#taskListing {
+  width: 70%;
+  margin: auto;
+}
+ul {
+  padding: 10px;
+}
+h1, h2 {
+  font-weight: bolder;
   text-align: center;
 }
-
+input {
+  border: 3px solid #000E02;
+  border-radius: 10px;
+  background-color: #D3DFD5;
+}
+button {
+  font-weight: bolder;
+}
+input:invalid {
+  background-color: #DF725F;
+}
+input:valid {
+  background-color: #37B43D;
+}
+textarea:invalid {
+  background-color: #DF725F;
+}
+textarea:valid {
+  background-color: #37B43D;
+}
 #error {
-  padding: 20px 0;
+  padding: 10px 0;
   font-size: 1rem;
   font-weight: bold;
 }
-
 .blinking{
-    animation:blinkingText 1.2s infinite;
+  text-align: center;
+  animation:blinkingText 1.2s infinite;
 }
 @keyframes blinkingText{
-    0%{     color: #ff0000;    }
-    49%{    color: #ff0000; }
+    0%{     color: #FF0000; }
+    49%{    color: #FF0000; }
     60%{    color: transparent; }
-    99%{    color:transparent;  }
-    100%{   color: #ff0000;    }
+    99%{    color: transparent; }
+    100%{   color: #FF0000; }
 }
